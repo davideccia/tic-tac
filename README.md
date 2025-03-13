@@ -4,7 +4,8 @@
 
 An expirations management tool for your Laravel models.
 
-> [!WARNING] This package is still in development, usage in production is not recommended.
+> [!WARNING] 
+> This package is still in development, usage in production is not recommended.
 
 ## Installation
 
