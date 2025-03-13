@@ -16,7 +16,7 @@ composer require davideccia/tic-tac
 ## Usage
 
 ### Model setup
-Implent the `Expirable` interface in your model:
+Implement the `Expirable` interface in your model:
 
 ```php
 use Davideccia\TicTac\Contracts\Expirable;
@@ -26,7 +26,7 @@ class WhateverCanExpire extends Model implements Expirable
     // ...
 }
 ```
-Then add the InteractsWithExpirations trait to your model:
+Then add the `InteractsWithExpirations` trait to your model:
 
 ```php
 use Davideccia\TicTac\Contracts\Expirable;
@@ -45,8 +45,8 @@ You can use the helper
 ```php
 tic_tac()
     ->for($whateverCanExpire)
-    ->dueDate(Carbon::now()->addDays(7))
-    ->alertDate(Carbon::now()->addDays(14))
+    ->dueDate(now()->addDays(14))
+    ->alertDate(now()->addDays(7))
     ->save();
 ```
 
@@ -54,7 +54,7 @@ Or the `TicTac` facade:
 
 ```php
 TicTac::for($whateverCanExpire)
-    ->dueDate(Carbon::now()->addDays(7))
-    ->alertDate(Carbon::now()->addDays(14))
+    ->dueDate(now()->addDays(14))
+    ->alertDate(now()->addDays(7))
     ->save();
 ```
