@@ -32,7 +32,10 @@
         "psr-4": {
             "Davideccia\\TicTac\\": "src/",
             "Davideccia\\TicTac\\Database\\Factories\\": "database/factories/"
-        }
+        },
+        "files": [
+            "src/Helpers/tic_tac.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
